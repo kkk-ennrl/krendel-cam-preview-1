@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KrendelCam</title>
+	<style type="text/css">
+		body {
+			background: rgba(250, 250, 250, 1);
+		}
+		@media screen and (min-width: 1000px) {
+			.window {
+				width: 350px;
+				height: 400px;
+				position: absolute;
+				bottom: 10px;
+				left: calc(50% - 175px);
+				background: #F0F0F0;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+				border-radius: 15px;
+			}
+			.window video {
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top: 50px;
+				z-index: 0;
+				left: calc(50% - 150px);
+			}
+			.window .text {
+				font-family: "Montserrat";
+				font-weight: 700;
+				font-size: 24px;
+				top: 20px;
+				position: absolute;
+				left: 0px;
+				text-align: center;
+				width: 100%;
+			}
+			.window .text2 {
+				position: absolute;
+				width: 100%;
+				left: 0px;
+				text-align: center;
+				top: 45px;
+				z-index: 1;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				/* identical to box height */
+
+
+				color: rgba(0, 0, 0, 0.5);
+
+			}
+			.window .button {
+				position: absolute;
+				width: calc(100% - 20px);
+				height: 40px;
+				left: 10px;
+				bottom: 10px;
+
+				background: #FAFAFA;
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+				border-radius: 7px;
+
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 40px;
+				/* identical to box height */
+
+
+				color: #D47F00;
+
+				text-align: center;
+			}
+			.window .text3 {
+
+				position: absolute;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				/* identical to box height */
+
+
+				color: rgba(0, 0, 0, 0.3);
+				left: 0px;
+				width: 100%;
+				text-align: center;
+				bottom: 60px;
+			}
+		}
+		@media screen and (max-width: 1000px) {
+			.window {
+				width: calc(100% - 20px);
+				height: 400px;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				background: #F0F0F0;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+				border-radius: 15px;
+			}
+			.window video {
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top: 50px;
+				z-index: 0;
+				left: calc(50% - 150px);
+			}
+			.window .text {
+				font-family: "Montserrat";
+				font-weight: 700;
+				font-size: 24px;
+				top: 20px;
+				position: absolute;
+				left: 0px;
+				text-align: center;
+				width: 100%;
+			}
+			.window .text2 {
+				position: absolute;
+				width: 100%;
+				left: 0px;
+				text-align: center;
+				top: 45px;
+				z-index: 1;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				/* identical to box height */
+
+
+				color: rgba(0, 0, 0, 0.5);
+
+			}
+			.window .button {
+				position: absolute;
+				width: calc(100% - 20px);
+				height: 40px;
+				left: 10px;
+				bottom: 10px;
+
+				background: #FAFAFA;
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+				border-radius: 7px;
+
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 40px;
+				/* identical to box height */
+
+
+				color: #D47F00;
+
+				text-align: center;
+			}
+			.window .text3 {
+
+				position: absolute;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				/* identical to box height */
+
+
+				color: rgba(0, 0, 0, 0.3);
+				left: 0px;
+				width: 100%;
+				text-align: center;
+				bottom: 60px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="window">
+		
+		<div class="text">Найдено устройство</div>
+		<div class='text2'>поблизости</div>
+		<video src="krendel_cam_animation_60fps_1080w.mp4" muted autoplay loop></video>
+		<div class="text3">Хотите подключить?</div>
+		<div class="button">Подключить</div>
+
+	</div>	
+
+	<script type="text/javascript">
+		
+
+
+	</script>
+
+</body>
+</html>
